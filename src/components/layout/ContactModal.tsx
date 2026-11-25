@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, ChevronDown, ArrowUpRight, Loader2 } from "lucide-react";
 import MagneticButton from "@/components/ui/MagneticButton";
-import { SERVICES, BOOKING_URL } from "@/content/site-content";
+import { SERVICES, BOOKING_URL, SITE_METADATA } from "@/content/site-content";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -246,8 +246,17 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 )}
               </button>
 
-              {/* Alternative CTA */}
-              <div className="text-center pt-2">
+              {/* Alternative CTA & Direct Email */}
+              <div className="text-center pt-2 space-y-2">
+                <p className="font-mono text-xs text-[#8c8c8a]">
+                  Or email us directly at{" "}
+                  <a
+                    href={`mailto:${SITE_METADATA.contact.email}`}
+                    className="text-[#fafafa] underline underline-offset-4 hover:text-[#b6f419] transition-colors"
+                  >
+                    {SITE_METADATA.contact.email}
+                  </a>
+                </p>
                 <p className="font-mono text-xs text-[#8c8c8a]">
                   Prefer a live conversation?{" "}
                   <a

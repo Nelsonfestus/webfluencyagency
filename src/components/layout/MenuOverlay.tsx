@@ -20,6 +20,7 @@ const NAV_LINKS = [
   { label: "Models & Pricing", href: "/#models", number: "05" },
   { label: "Selected Work", href: "/#work", number: "06" },
   { label: "FAQ", href: "/#faq", number: "07" },
+  { label: "Website & Software APIs", href: "/apis", number: "08" },
 ];
 
 export default function MenuOverlay({ isOpen, onClose, onOpenContact }: MenuOverlayProps) {

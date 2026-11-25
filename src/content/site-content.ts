@@ -13,9 +13,9 @@ export const SITE_METADATA = {
   url: "https://webfluency.agency",
   ogImage: "/images/og-image.jpg",
   contact: {
-    email: "hello@webfluency.agency", // Placeholder: replace with your business email
+    email: "Webfluencyagency4220@gmail.com",
     phone: "+1 (555) 019-2834",      // Placeholder: replace with your business phone
-    address: "New York & Remote Worldwide",
+    address: "UK · US · Germany · France · South Africa",
   },
   socials: [
     { label: "Twitter / X", url: "https://twitter.com/yourhandle" },
@@ -379,18 +379,26 @@ export const FEATURED_CASE_STUDY = {
   image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
 };
 
+export const COUNTRIES_SERVED = [
+  "UK",
+  "US",
+  "Germany",
+  "France",
+  "South Africa",
+];
+
 export const STATS = [
   {
     id: "stat-1",
-    value: "[00]+",
+    value: "100+",
     label: "Websites & Applications Shipped",
-    subtext: "Crafted with Next.js, TypeScript, and clean code standards.",
+    subtext: "Built and launched across the UK, US, Germany, France, and South Africa.",
   },
   {
     id: "stat-2",
-    value: "[00]%",
-    label: "Average Page Speed Improvement",
-    subtext: "Eliminating bloat so Google and real customers stay engaged.",
+    value: "5",
+    label: "Countries Served Globally",
+    subtext: "Active delivery footprint in UK, US, Germany, France & South Africa.",
   },
   {
     id: "stat-3",
@@ -401,8 +409,8 @@ export const STATS = [
   {
     id: "stat-4",
     value: "100%",
-    label: "In-House Senior Execution",
-    subtext: "No outsourced junior teams or hidden handoffs.",
+    label: "Solo & Developer Team Delivery",
+    subtext: "We handle projects single-handedly for speed, or deploy our full developer team for scale.",
   },
 ];
 
@@ -468,4 +476,98 @@ export const PARTNER_PLACEHOLDERS = [
   { name: "Lumina Labs", category: "AI Infrastructure" },
   { name: "Terra Capital", category: "Growth Equity" },
   { name: "Beacon Retail", category: "Direct-to-Consumer" },
+];
+
+export interface ApiProduct {
+  id: string;
+  number: string;
+  title: string;
+  category: string;
+  price: string;
+  deliveryTime: string;
+  description: string;
+  specs: string[];
+}
+
+export const APIS_CATALOG: ApiProduct[] = [
+  {
+    id: "website-crm-api",
+    number: "01",
+    title: "Website-to-CRM Integration API",
+    category: "Website APIs & Integrations",
+    price: "$200",
+    deliveryTime: "3–5 Business Days",
+    description:
+      "Connect your website forms, booking flows, and lead magnets directly to HubSpot, Salesforce, Pipedrive, or Airtable with schema validation, deduplication, and automatic retry queues.",
+    specs: [
+      "REST & Webhook Endpoints",
+      "Real-time Lead Sync & Mapping",
+      "Rate Limiting & Error Retries",
+      "Full OpenAPI Documentation",
+    ],
+  },
+  {
+    id: "ai-application-api",
+    number: "02",
+    title: "AI Application & Automation API",
+    category: "Software Development APIs",
+    price: "$250",
+    deliveryTime: "4–6 Business Days",
+    description:
+      "Production-ready AI middleware connecting OpenAI, Claude, or ElevenLabs to your website or SaaS product—with prompt guardrails, streaming responses, and token usage logging.",
+    specs: [
+      "Streaming SSE / JSON Endpoints",
+      "Provider Failover & Caching",
+      "Token & Cost Telemetry",
+      "Auth Key & Quota Controls",
+    ],
+  },
+  {
+    id: "headless-cms-sync-api",
+    number: "03",
+    title: "Headless CMS & Data Sync API",
+    category: "Website APIs & Integrations",
+    price: "$200",
+    deliveryTime: "3–5 Business Days",
+    description:
+      "Unified data aggregation and webhook revalidation layer bridging Sanity, Contentful, WordPress, or Shopify to Next.js so content and inventory updates appear in milliseconds.",
+    specs: [
+      "On-Demand Cache Revalidation",
+      "Normalized JSON / GraphQL Layer",
+      "Image & Media URL Signing",
+      "Zero-Downtime Sync Webhooks",
+    ],
+  },
+  {
+    id: "payment-subscription-api",
+    number: "04",
+    title: "Payment Gateway & Subscription API",
+    category: "Software Development APIs",
+    price: "$250",
+    deliveryTime: "4–6 Business Days",
+    description:
+      "Secure Stripe, Paystack, or LemonSqueezy checkout session, webhook signature verification, subscription lifecycle, and automated invoice/receipt endpoints.",
+    specs: [
+      "Verified Webhook Handlers",
+      "Subscription Upgrade / Cancel Flows",
+      "Idempotent Checkout Creation",
+      "Tax & Currency Handling",
+    ],
+  },
+  {
+    id: "saas-backend-auth-api",
+    number: "05",
+    title: "Custom SaaS Backend & Auth API",
+    category: "Software Development APIs",
+    price: "$250",
+    deliveryTime: "5–7 Business Days",
+    description:
+      "Scalable Node.js / Next.js backend with role-based access control, JWT/session auth, PostgreSQL (Supabase) migrations, and Docker-ready deployment configuration.",
+    specs: [
+      "Role-Based Access Control (RBAC)",
+      "PostgreSQL / Supabase Schema",
+      "Input Validation & CORS Hardening",
+      "Docker & CI/CD Ready",
+    ],
+  },
 ];

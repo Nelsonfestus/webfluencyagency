@@ -1,6 +1,6 @@
 "use client";
 
-import { ENGAGEMENT_MODELS, BOOKING_URL } from "@/content/site-content";
+import { ENGAGEMENT_MODELS, BOOKING_URL, SITE_METADATA } from "@/content/site-content";
 import MagneticButton from "@/components/ui/MagneticButton";
 import { Check } from "lucide-react";
 
@@ -116,7 +116,7 @@ export default function EngagementModels() {
         {/* Bottom trust note */}
         <p className="mt-10 text-center font-mono text-xs text-[#8c8c8a]">
           No lock-in contracts &bull; Transparent scoping &bull; Commercial results defined before work begins &bull;{" "}
-          <a href={`mailto:hello@webfluency.agency`} className="text-[#b6f419] hover:underline">
+          <a href={`mailto:${SITE_METADATA.contact.email}`} className="text-[#b6f419] hover:underline">
             Custom enterprise arrangements available
           </a>
         </p>

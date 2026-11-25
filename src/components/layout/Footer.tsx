@@ -32,7 +32,6 @@ export default function Footer() {
                 >
                   {SITE_METADATA.contact.email}
                 </a>
-                <span className="ml-2 text-[#555] text-[11px]">[PLACEHOLDER]</span>
               </div>
               <div>
                 <span className="text-[#8c8c8a]">Phone: </span>
@@ -108,6 +107,7 @@ export default function Footer() {
                   { label: "FAQ", href: "/#faq" },
                   { label: "Models", href: "/#models" },
                   { label: "Contact", href: "/#contact" },
+                  { label: "Website & Software APIs", href: "/apis" },
                 ].map((link) => (
                   <li key={link.label}>
                     <Link

@@ -244,12 +244,12 @@ export default function WhyWebfluency() {
             </div>
 
             <div>
-              <span className="font-mono text-xs text-[#8c8c8a]">05 / Direct Access</span>
+              <span className="font-mono text-xs text-[#8c8c8a]">05 / Solo &amp; Team Capacity</span>
               <h3 className="mt-2 font-display text-2xl font-bold tracking-tight text-[#fafafa] group-hover:text-[#b6f419] transition-colors">
-                One Point of Contact
+                One Point of Contact, Full Team Power
               </h3>
               <p className="mt-3 text-sm text-[#8c8c8a] leading-relaxed">
-                No junior account managers playing telephone. You communicate directly with the senior engineer and strategist owning your project.
+                We handle projects single-handedly for rapid execution, and also have a dedicated team of developers ready to scale and deliver larger builds.
               </p>
             </div>
           </div>

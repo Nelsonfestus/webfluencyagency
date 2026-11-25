@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { STATS } from "@/content/site-content";
+import { STATS, COUNTRIES_SERVED } from "@/content/site-content";
 
 export default function Stats() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -55,10 +55,8 @@ export default function Stats() {
             Numbers Behind the Method.
           </h2>
           <p className="mt-4 text-sm text-[#8c8c8a] max-w-xl mx-auto">
-            All stats marked{" "}
-            <span className="text-[#b6f419] font-mono">[00]</span> are clearly
-            labelled placeholders — replace them with your verified client data
-            before publishing.
+            100+ websites shipped across 5 countries—delivered single-handedly or
+            with our dedicated developer team.
           </p>
         </div>
 
@@ -84,6 +82,23 @@ export default function Stats() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Countries We've Worked In */}
+        <div className="mt-10 rounded-card border border-[rgba(255,255,255,0.08)] bg-[#141414] px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#8c8c8a]">
+            Countries We&apos;ve Worked With
+          </span>
+          <div className="flex flex-wrap items-center justify-center gap-2.5">
+            {COUNTRIES_SERVED.map((country) => (
+              <span
+                key={country}
+                className="rounded-pill border border-[rgba(255,255,255,0.12)] bg-[#1c1c1c] px-4 py-1.5 font-mono text-xs font-medium text-[#fafafa] hover:border-[#b6f419] hover:text-[#b6f419] transition-colors"
+              >
+                {country}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
