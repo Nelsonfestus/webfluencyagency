@@ -69,6 +69,12 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
 
             {/* Right Action Cluster */}
             <div className="flex items-center gap-3">
+              <Link
+                href="/apis"
+                className="inline-flex h-10 items-center rounded-full border border-[rgba(255,255,255,0.15)] bg-[#181818]/90 px-4 font-mono text-xs font-medium text-[#fafafa] transition-all hover:border-[#b6f419] hover:text-[#b6f419]"
+              >
+                APIs
+              </Link>
               <MagneticButton
                 href={BOOKING_URL}
                 variant="primary"

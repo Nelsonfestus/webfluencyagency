@@ -18,8 +18,7 @@ const NAV_LINKS = [
   { label: "Why Webfluency", href: "/#why-us", number: "03" },
   { label: "Process", href: "/#process", number: "04" },
   { label: "Models & Pricing", href: "/#models", number: "05" },
-  { label: "FAQ", href: "/#faq", number: "06" },
-  { label: "Website & Software APIs", href: "/apis", number: "07" },
+  { label: "Website & Software APIs", href: "/apis", number: "06" },
 ];
 
 export default function MenuOverlay({ isOpen, onClose, onOpenContact }: MenuOverlayProps) {
@@ -115,7 +114,7 @@ export default function MenuOverlay({ isOpen, onClose, onOpenContact }: MenuOver
           >
             <div className="flex items-baseline gap-4 md:gap-6">
               <span className="font-mono text-xs text-[#8c8c8a] group-hover:text-[#b6f419] transition-colors">
-                08
+                07
               </span>
               <span className="font-display text-2xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#fafafa] group-hover:text-[#b6f419] transition-colors group-hover:translate-x-2 duration-300">
                 Send Message / Inquire
