@@ -68,31 +68,6 @@ export default function ApisPage() {
             our solo lead or full developer team. Select the API you need and
             purchase directly via email.
           </p>
-
-          {/* Email Purchase Banner */}
-          <div className="mt-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-[#b6f419]/30 bg-[#b6f419]/5 p-5 sm:p-6 max-w-3xl">
-            <div>
-              <div className="font-mono text-[11px] uppercase tracking-widest text-[#b6f419] mb-1">
-                Direct Email Ordering
-              </div>
-              <p className="text-sm text-[#fafafa]">
-                Send your selected API and project details directly to{" "}
-                <a
-                  href={`mailto:${email}?subject=API%20Purchase%20Inquiry`}
-                  className="font-mono font-bold text-[#b6f419] underline underline-offset-4 hover:text-[#cbff46]"
-                >
-                  {email}
-                </a>
-              </p>
-            </div>
-            <a
-              href={`mailto:${email}?subject=API%20Purchase%20Inquiry`}
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-pill bg-[#b6f419] px-6 py-3 font-mono text-xs font-bold uppercase tracking-wider text-black hover:bg-[#cbff46] transition-colors"
-            >
-              <Mail className="h-3.5 w-3.5" />
-              Email to Order
-            </a>
-          </div>
         </div>
       </section>
 
