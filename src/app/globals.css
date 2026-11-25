@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #131313;
+  --black: #000000;
+  --card: #181818;
+  --surface: #212121;
+  --text: #fafafa;
+  --muted: #8c8c8a;
+  --accent: #b6f419;
+  --accent-hover: #cbff46;
+  --accent-subtle: rgba(182, 244, 25, 0.12);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-light: rgba(0, 0, 0, 0.08);
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-smooth: cubic-bezier(0.3, 0.86, 0.36, 0.95);
+  --radius-card: 24px;
+  --radius-pill: 999px;
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Lenis Recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--accent);
+  color: #000000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Editorial Typography */
+.display-heading {
+  font-family: var(--font-display);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+}
+
+.tight-tracking {
+  letter-spacing: -0.03em;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(24, 24, 24, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+}
+
+.glass-pill {
+  background: rgba(33, 33, 33, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Horizontal Marquee Fade Mask */
+.marquee-mask {
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 12%,
+    rgba(0, 0, 0, 1) 88%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 12%,
+    rgba(0, 0, 0, 1) 88%,
+    transparent 100%
+  );
+}
+
+/* Line mask reveal container */
+.line-reveal-wrap {
+  overflow: hidden;
+  display: block;
+}
+
+.line-reveal-inner {
+  display: block;
+  transform: translateY(0%);
+  transition: transform 0.85s var(--ease-expo), opacity 0.85s var(--ease-expo);
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
