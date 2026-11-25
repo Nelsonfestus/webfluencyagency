@@ -102,7 +102,6 @@ export default function Footer() {
                   { label: "Home", href: "/" },
                   { label: "Why Us", href: "/#why-us" },
                   { label: "Services", href: "/#services" },
-                  { label: "Selected Work", href: "/#work" },
                   { label: "Process", href: "/#process" },
                   { label: "FAQ", href: "/#faq" },
                   { label: "Models", href: "/#models" },

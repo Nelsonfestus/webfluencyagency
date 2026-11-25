@@ -18,9 +18,8 @@ const NAV_LINKS = [
   { label: "Why Webfluency", href: "/#why-us", number: "03" },
   { label: "Process", href: "/#process", number: "04" },
   { label: "Models & Pricing", href: "/#models", number: "05" },
-  { label: "Selected Work", href: "/#work", number: "06" },
-  { label: "FAQ", href: "/#faq", number: "07" },
-  { label: "Website & Software APIs", href: "/apis", number: "08" },
+  { label: "FAQ", href: "/#faq", number: "06" },
+  { label: "Website & Software APIs", href: "/apis", number: "07" },
 ];
 
 export default function MenuOverlay({ isOpen, onClose, onOpenContact }: MenuOverlayProps) {

@@ -15,7 +15,6 @@ import WhyWebfluency from "@/components/sections/WhyWebfluency";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
 import EngagementModels from "@/components/sections/EngagementModels";
-import SelectedWork from "@/components/sections/SelectedWork";
 import Stats from "@/components/sections/Stats";
 import TechMarquee from "@/components/sections/TechMarquee";
 import Faq from "@/components/sections/Faq";
@@ -49,7 +48,6 @@ export default function HomePage() {
         <Services />
         <Process />
         <EngagementModels />
-        <SelectedWork />
         <Stats />
         <TechMarquee />
         <Faq />
